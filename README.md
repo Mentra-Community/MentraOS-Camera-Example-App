@@ -45,9 +45,11 @@ MentraOS install links: [mentra.glass/install](https://mentra.glass/install)
      PORT=3000
      PACKAGE_NAME=com.yourName.yourAppName
      MENTRAOS_API_KEY=your_api_key_from_console
+     ROBOFLOW_API_KEY=your_roboflow_api_key
      ```
    * Make sure the `PACKAGE_NAME` matches what you registered in the MentraOS Console
-   * Get your `API_KEY` from the MentraOS Developer Console
+   * Get your `MENTRAOS_API_KEY` from the MentraOS Developer Console
+   * The `ROBOFLOW_API_KEY` is used for face detection - get your own from [Roboflow](https://roboflow.com/)
 
 6. Run your app with `bun run dev`
 
