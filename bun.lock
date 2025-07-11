@@ -4,7 +4,8 @@
     "": {
       "name": "augmentos-cloud-example-app",
       "dependencies": {
-        "@mentra/sdk": "^2.1.1",
+        "@mentra/sdk": "2.1.2",
+        "axios": "^1.10.0",
         "ejs": "^3.1.10",
         "express": "^4.21.2",
         "ws": "^8.18.1",
@@ -29,7 +30,7 @@
 
     "@logtail/types": ["@logtail/types@0.5.3", "", {}, "sha512-5uKf1xQ7wRqSW0lYIwDpXdXcFHxPKH5EM22MoEjwTpd8suymOYuEdx9qCCHCYey4uOhPq7x6OkZf86bTO83JsA=="],
 
-    "@mentra/sdk": ["@mentra/sdk@2.1.1", "", { "dependencies": { "@logtail/pino": "^0.5.4", "axios": "^1.8.1", "cookie-parser": "^1.4.7", "dotenv": "^16.4.0", "express": "^4.18.2", "jsonwebtoken": "^8.5.1", "jsrsasign": "^11.1.0", "multer": "^2.0.1", "pino": "^9.6.0", "pino-pretty": "^13.0.0", "ws": "^8.18.2" } }, "sha512-GZoTN1bXYzUEYJn0eIQL4ppBdMSJUFMVchUJQGXWYrpcCo3/zQpQfGmoKNuHUDSahMljk/gyfbxTNgQw65RRyg=="],
+    "@mentra/sdk": ["@mentra/sdk@2.1.2", "", { "dependencies": { "@logtail/pino": "^0.5.4", "axios": "^1.8.1", "cookie-parser": "^1.4.7", "dotenv": "^16.4.0", "express": "^4.18.2", "jsonwebtoken": "^8.5.1", "jsrsasign": "^11.1.0", "multer": "^2.0.1", "pino": "^9.6.0", "pino-pretty": "^13.0.0", "ws": "^8.18.2" } }, "sha512-0k7F/D8SGJGmdh5V09w7QATkBlCiysa1ZR3MzFjmSprhdNuMt6WAJm87YaQeHgYhSpr4riiMbPmCe4O9LQuAWg=="],
 
     "@msgpack/msgpack": ["@msgpack/msgpack@2.8.0", "", {}, "sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ=="],
 
@@ -77,7 +78,7 @@
 
     "atomic-sleep": ["atomic-sleep@1.0.0", "", {}, "sha512-kNOjDqAh7px0XWNI+4QbzoiR/nTkHAWNud2uvnJquD1/x5a7EQZMJT0AczqK0Qn67oY/TTQ1LbUKajZpp3I9tQ=="],
 
-    "axios": ["axios@1.9.0", "", { "dependencies": { "follow-redirects": "^1.15.6", "form-data": "^4.0.0", "proxy-from-env": "^1.1.0" } }, "sha512-re4CqKTJaURpzbLHtIi6XpDv20/CnpXOtjRY5/CU32L8gU8ek9UIivcfvSWvmKEngmVbrUtPpdDwWDWL7DNHvg=="],
+    "axios": ["axios@1.10.0", "", { "dependencies": { "follow-redirects": "^1.15.6", "form-data": "^4.0.0", "proxy-from-env": "^1.1.0" } }, "sha512-/1xYAC4MP/HEG+3duIhFr4ZQXR4sQXOIe+o6sdqzeykGLx6Upp/1p8MHqhINOvGeP7xyNHe7tsiJByc4SSVUxw=="],
 
     "balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 

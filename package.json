@@ -11,7 +11,8 @@
   "license": "ISC",
   "description": "Example app for taking photos with MentraOS",
   "dependencies": {
-    "@mentra/sdk": "^2.1.1",
+    "@mentra/sdk": "2.1.2",
+    "axios": "^1.10.0",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "ws": "^8.18.1"
