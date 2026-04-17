@@ -1,14 +1,12 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import { Camera, Zap, Terminal, Moon, Sun } from "lucide-react";
+import { Camera, Zap, Terminal } from "lucide-react";
 import {
   Badge,
-  Switch,
   Tabs,
   TabsList,
   TabsTrigger,
   TabsContent,
 } from "../../components/ui";
-import { useTheme } from "../../App";
 import { PhotoStream, type Photo } from "./components/PhotoStream";
 import { AudioControls } from "./components/AudioControls";
 import {
@@ -22,7 +20,6 @@ interface HomePageProps {
 }
 
 export default function HomePage({ userId }: HomePageProps) {
-  const { isDarkMode, toggleTheme } = useTheme();
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [transcriptions, setTranscriptions] = useState<Transcription[]>([]);
   const [logs, setLogs] = useState<Log[]>([]);
@@ -152,27 +149,19 @@ export default function HomePage({ userId }: HomePageProps) {
   return (
     <div className="max-w-5xl mx-auto p-4 md:p-6 space-y-4">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div>
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
             <Camera className="w-4 h-4 text-primary-foreground" />
           </div>
           <div>
-            <h1 className="text-lg font-semibold">Camera App</h1>
+            <h1 className="text-lg font-semibold">Camera Example App</h1>
             <p className="text-xs text-muted-foreground">MentraOS</p>
           </div>
         </div>
-
-        <div className="flex items-center gap-3">
-          <Badge variant="outline" className="font-mono text-xs">
-            {userId?.substring(0, 8)}...
-          </Badge>
-          <div className="flex items-center gap-2">
-            <Sun className="w-3.5 h-3.5 text-muted-foreground" />
-            <Switch checked={isDarkMode} onCheckedChange={toggleTheme} />
-            <Moon className="w-3.5 h-3.5 text-muted-foreground" />
-          </div>
-        </div>
+        <Badge variant="outline" className="font-mono text-xs mt-2">
+          {userId && userId.length > 20 ? `${userId.substring(0, 20)}...` : userId}
+        </Badge>
       </div>
 
       {/* Photo Stream */}
