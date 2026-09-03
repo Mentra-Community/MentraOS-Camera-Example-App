@@ -8,7 +8,7 @@
     "start": "bun src/index.ts"
   },
   "author": "Aryan Farhang",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "description": "Camera app for taking photos with MentraOS",
   "dependencies": {
     "@mentra/react": "2.1.2",
